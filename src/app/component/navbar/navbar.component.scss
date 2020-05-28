@@ -1,0 +1,46 @@
+.navbar {
+    height: 60px;
+    width: 100%;
+    background: #fff;
+    padding: 0;
+    .ai_tab,
+    .ai_tab__active,
+    .ai_tab__active-text,
+    .navitem {
+        height: 100%;
+    }
+    .ai_tab__active,
+    .ai_tab__active-text,
+    .navitem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ai_tab {
+        &__active {
+            font-weight: 600;
+            &-text {
+                border-bottom: 0.3rem solid #ffd609;
+            }
+        }
+    }
+    .navitem {
+        &__menulist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    .dropbtmleft .dropdown-menu {
+        top: calc(100% + 5px);
+        right: 0;
+        left: auto;
+        margin-top: 0;
+        margin-right: 0.125rem;
+    }
+    .ai-ava {
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+    }
+}

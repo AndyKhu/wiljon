@@ -1,0 +1,29 @@
+<div class="sidebar" id="sidebar">
+    <div class="sidebar__brand">
+        <div class="sidebar__brand__text">
+            <fa-icon class="sidebar__brand__text__icon" [icon]="['fas','circle']"></fa-icon>
+            <span>Title</span>
+        </div>
+        <div class="sidebar__brand__tools">
+            <button class="btn" aria-pressed="false" (click)="toggleF()">
+                <fa-icon [icon]="tools"></fa-icon>
+            </button>
+        </div>
+    </div>
+    <div class="sidebar__container" id="sidebar__container">
+        <ul class="sidebar__menulist">
+            <li class="sidebar__menulist__menu active">
+                <a class="sidebar__menulist__menu__link">
+                    <fa-icon class="sidebar__menulist__menu__link-icon" [icon]="['fas','home']"></fa-icon>
+                    <span class="sidebar__menulist__menu__link-text">Dashboard</span>
+                </a>
+            </li>
+            <li class="sidebar__menulist__menu">
+                <a class="sidebar__menulist__menu__link">
+                    <fa-icon class="sidebar__menulist__menu__link-icon" [icon]="['fas','cog']"></fa-icon>
+                    <span class="sidebar__menulist__menu__link-text">Setting</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
