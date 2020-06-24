@@ -1,1 +1,15 @@
-<p>login works!</p>
+<img class="wave" src="assets/wave.png">
+<div class="container">
+    <div class="img">
+        <img src="assets/bg.svg">
+    </div>
+    <div class="login-content">
+        <form (ngSubmit)="onSubmit()">
+            <img src="assets/avatar.svg">
+            <h2 class="title">Welcome</h2>
+            <app-inputtext [(inputModel)] = 'user.username' [name]="'Username'" [icon]="'user'" [type]="'text'"></app-inputtext>
+            <app-inputtext [(inputModel)] = 'user.password' [name]="'Password'" [icon]="'lock'" [type]="'password'"></app-inputtext>
+            <input type="submit" class="btn" value="Login">
+        </form>
+    </div>
+</div>
